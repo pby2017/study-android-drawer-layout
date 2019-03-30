@@ -32,12 +32,30 @@ class MainActivity : AppCompatActivity() {
 
             override fun onDrawerSlide(drawerView: View, slideOffset: Float) {
                 Log.d("googry", "slideOffset "+slideOffset)
+                // 밀기
                 when (drawerView.id){
                     R.id.frame_left_side -> {
                         constraint_main_content.translationX = slideOffset * constraint_main_content.width / 2
                     }
                     R.id.frame_right_side -> {
                         constraint_main_content.translationX = -slideOffset * constraint_main_content.width / 2
+                    }
+                }
+                // 회전
+                when (drawerView.id){
+                    R.id.frame_left_side -> {
+                        constraint_main_content.rotationY = slideOffset * 180;
+                    }
+                    R.id.frame_right_side -> {
+                        constraint_main_content.rotationY = -slideOffset * 180;
+                    }
+                }
+                when (drawerView.id){
+                    R.id.frame_left_side -> {
+
+                    }
+                    R.id.frame_right_side -> {
+
                     }
                 }
             }

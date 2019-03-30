@@ -55,6 +55,11 @@ android:layout_marginStart="-65dp"
 * override fun onDrawerOpened(drawerView: View)
   * 완전히 열렸을 때 호출
   * 그다음, DrawerLayout.STATE_IDLE 호출
+> 본문 내용 같이 밀리기 animation
+* constraint_main_content.translationX = slideOffset * constraint_main_content.width / 2
+> 본문 내용 회전하기 animation
+* constraint_main_content.rotationY = slideOffset * 180;
+  * Y축 기준으로 180도 회전
 #
 #
 # ?
