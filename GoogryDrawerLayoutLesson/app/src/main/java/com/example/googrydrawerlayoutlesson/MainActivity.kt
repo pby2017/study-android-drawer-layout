@@ -32,6 +32,14 @@ class MainActivity : AppCompatActivity() {
 
             override fun onDrawerSlide(drawerView: View, slideOffset: Float) {
                 Log.d("googry", "slideOffset "+slideOffset)
+                when (drawerView.id){
+                    R.id.frame_left_side -> {
+                        constraint_main_content.translationX = slideOffset * constraint_main_content.width / 2
+                    }
+                    R.id.frame_right_side -> {
+                        constraint_main_content.translationX = -slideOffset * constraint_main_content.width / 2
+                    }
+                }
             }
 
             override fun onDrawerClosed(drawerView: View) {
