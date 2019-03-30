@@ -39,3 +39,9 @@ android:layout_gravity="start" 중요
 android:layout_marginEnd="-65dp"
 android:layout_marginStart="-65dp"
 ```
+#
+#
+# ?
+## 단축키
+> Ctrl(^) + G
+* 선택한 블록부터 아래 동일한 블록 1개씩 선택
