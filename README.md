@@ -32,3 +32,10 @@ android:layout_gravity="start" 중요
 ```
 > 버튼 클릭 이벤트 추가
 * 생략
+> right drawer layout / 버튼 추가
+* 생략
+> full screen drawer layout
+```xml
+android:layout_marginEnd="-65dp"
+android:layout_marginStart="-65dp"
+```

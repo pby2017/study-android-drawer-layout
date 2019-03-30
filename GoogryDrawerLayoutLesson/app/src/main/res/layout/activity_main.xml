@@ -48,6 +48,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="start"
+            android:layout_marginEnd="-65dp"
             android:background="@color/color02_FFCA06">
 
     </FrameLayout>
@@ -58,6 +59,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="end"
+            android:layout_marginStart="-65dp"
             android:background="@color/color03_E8FFDF">
 
     </FrameLayout>
