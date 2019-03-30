@@ -39,6 +39,22 @@ android:layout_gravity="start" 중요
 android:layout_marginEnd="-65dp"
 android:layout_marginStart="-65dp"
 ```
+> addDrawerListener / DrawerLayout.DrawerListener / onDrawerStateChanged
+* drawer 상태에 따라 표시
+* override fun onDrawerStateChanged(newState: Int)
+  * DrawerLayout.STATE_IDLE : 멈췄을 때
+  * DrawerLayout.STATE_DRAGGING : ?
+  * DrawerLayout.STATE_SETTLING : 처음 움직이기 직전
+    * 그다음, onDrawerSlide 호출
+* override fun onDrawerSlide(drawerView: View, slideOffset: Float)
+  * 움직일 때
+  * slideOffset 값이 0.0부터 1.0까지 변함
+* override fun onDrawerClosed(drawerView: View)
+  * 완전히 닫혔을 때 호출
+  * 그다음, DrawerLayout.STATE_IDLE 호출
+* override fun onDrawerOpened(drawerView: View)
+  * 완전히 열렸을 때 호출
+  * 그다음, DrawerLayout.STATE_IDLE 호출
 #
 #
 # ?
