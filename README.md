@@ -66,6 +66,14 @@ android:layout_marginStart="-65dp"
 * constraint_main_content.scaleX = (1 - slideOffset * 0.2).toFloat()
 * constraint_main_content.scaleY = (1 - slideOffset * 0.2).toFloat()
   * right도 동일
+> 직접 드래그 이벤트 LOCK_MODE
+  * LOCKED_OPEN
+    * drawer_root.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_OPEN)
+      * 숨겨져있던 layout 다 열어놓음
+  * LOCKED_CLOSED
+    * 숨겨져있던 layout을 드래그로 못 열게 막음
+    * drawer_root.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED)
+    * drawer_root.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED, slide id)
 #
 #
 # ?

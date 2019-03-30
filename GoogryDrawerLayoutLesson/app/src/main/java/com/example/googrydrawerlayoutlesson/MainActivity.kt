@@ -42,14 +42,14 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
                 // 회전
-//                when (drawerView.id){
-//                    R.id.frame_left_side -> {
-//                        constraint_main_content.rotationY = slideOffset * 180;
-//                    }
-//                    R.id.frame_right_side -> {
-//                        constraint_main_content.rotationY = -slideOffset * 180;
-//                    }
-//                }
+                when (drawerView.id){
+                    R.id.frame_left_side -> {
+                        constraint_main_content.rotationY = slideOffset * 180;
+                    }
+                    R.id.frame_right_side -> {
+                        constraint_main_content.rotationY = -slideOffset * 180;
+                    }
+                }
                 // 크기 변경
                 when (drawerView.id){
                     R.id.frame_left_side -> {
@@ -71,6 +71,8 @@ class MainActivity : AppCompatActivity() {
                 Log.d("googry", "Drawer 열렸을 때")
             }
         })
+
+        drawer_root.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED)
 
         button_open_left.setOnClickListener{
             drawer_root.openDrawer(frame_left_side)
