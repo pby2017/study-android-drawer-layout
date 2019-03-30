@@ -25,6 +25,21 @@
                 android:text="@string/open_left_non_animate"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/button_open_left"/>
+
+        <Button
+                android:id="@+id/button_open_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/open_right"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+        <Button
+                android:id="@+id/button_open_right_non_animate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/open_right_non_animate"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/button_open_right"/>
     </android.support.constraint.ConstraintLayout>
 
     <!-- navigation drawer view -->
@@ -34,6 +49,16 @@
             android:layout_height="match_parent"
             android:layout_gravity="start"
             android:background="@color/color02_FFCA06">
+
+    </FrameLayout>
+
+    <!-- navigation drawer view -->
+    <FrameLayout
+            android:id="@+id/frame_right_side"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:background="@color/color03_E8FFDF">
 
     </FrameLayout>
 </android.support.v4.widget.DrawerLayout>
