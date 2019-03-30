@@ -57,9 +57,15 @@ android:layout_marginStart="-65dp"
   * 그다음, DrawerLayout.STATE_IDLE 호출
 > 본문 내용 같이 밀리기 animation
 * constraint_main_content.translationX = slideOffset * constraint_main_content.width / 2
+  * right는 -1 곱하기
 > 본문 내용 회전하기 animation
 * constraint_main_content.rotationY = slideOffset * 180;
   * Y축 기준으로 180도 회전
+  * right는 -1 곱하기
+> 본문 내용 크기 변경 animation
+* constraint_main_content.scaleX = (1 - slideOffset * 0.2).toFloat()
+* constraint_main_content.scaleY = (1 - slideOffset * 0.2).toFloat()
+  * right도 동일
 #
 #
 # ?

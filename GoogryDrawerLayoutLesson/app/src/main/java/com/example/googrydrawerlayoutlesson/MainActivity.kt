@@ -42,20 +42,23 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
                 // 회전
+//                when (drawerView.id){
+//                    R.id.frame_left_side -> {
+//                        constraint_main_content.rotationY = slideOffset * 180;
+//                    }
+//                    R.id.frame_right_side -> {
+//                        constraint_main_content.rotationY = -slideOffset * 180;
+//                    }
+//                }
+                // 크기 변경
                 when (drawerView.id){
                     R.id.frame_left_side -> {
-                        constraint_main_content.rotationY = slideOffset * 180;
+                        constraint_main_content.scaleX = (1 - slideOffset * 0.2).toFloat()
+                        constraint_main_content.scaleY = (1 - slideOffset * 0.2).toFloat()
                     }
                     R.id.frame_right_side -> {
-                        constraint_main_content.rotationY = -slideOffset * 180;
-                    }
-                }
-                when (drawerView.id){
-                    R.id.frame_left_side -> {
-
-                    }
-                    R.id.frame_right_side -> {
-
+                        constraint_main_content.scaleX = (1 - slideOffset * 0.2).toFloat()
+                        constraint_main_content.scaleY = (1 - slideOffset * 0.2).toFloat()
                     }
                 }
             }
