@@ -1,6 +1,4 @@
-# 2019년 상반기 following Android edu streaming by 정석준의 개발저장소
-
-
+# [2019년 상반기 following Android edu streaming by 정석준의 개발저장소](https://youtu.be/F44nJLW5Bac)
 > 툴바 제거  
   * styles.xml
     * item name="windowActionBar" : false
