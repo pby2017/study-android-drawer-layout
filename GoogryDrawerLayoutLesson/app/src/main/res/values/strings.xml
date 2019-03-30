@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">GoogryDrawerLayoutLesson</string>
+    <string name="open_left">왼쪽 열기</string>
+    <string name="open_left_non_animate">왼쪽 열기 non animate</string>
 </resources>

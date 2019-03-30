@@ -13,3 +13,22 @@
     * 붙여넣기 : command + V
   * colors.xml
     * item 추가
+> left drawer layout 추가  
+> 왼쪽에서 클릭 후 오른쪽으로 드래그하면 숨겨져있던 layout이 등장함
+```xml
+<!-- 
+FrameLayout 속성 중
+android:layout_gravity="start" 중요 
+-->
+<DrawerLayout
+    match_parent>
+    <ConstraintLayout
+        match_parent/>
+    <FrameLayout
+        match_parent
+        android:layout_gravity="start">
+    </FrameLayout>
+</DrawerLayout>
+```
+> 버튼 클릭 이벤트 추가
+* 생략
